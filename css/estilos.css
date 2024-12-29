@@ -238,13 +238,13 @@ footer .legal-links li {
 /* Pagina about */
 
 
-.page-about .img-fluid{
+.page-about .img-fluid {
     padding: 10px;
     background: white;
     border: 1px solid var(--secundary-light-color);
 }
 
-.page-about figure{
+.page-about figure {
     font-size: 0.9rem;
     text-align: center;
     margin-bottom: 30px;
@@ -259,7 +259,7 @@ footer .legal-links li {
     min-height: calc(100vh - 205px);
 }
 
-.table{
+.table {
     width: 100%;
     margin: 30px;
     border-collapse: collapse;
@@ -303,3 +303,74 @@ table caption {
     text-transform: uppercase;
     font-weight: 700;
 }
+
+/* Pagina join */
+
+form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+fieldset {
+    border: 1px solid var(--primary-color);
+}
+
+legend {
+    background: var(--primary-color);
+    color: white;
+    font-weight: 500;
+    margin-left: 20px;
+    padding: 3px;
+}
+
+.form-datospersonales {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px 20px;
+    background-color: white;
+}
+
+.required {
+    color: red;
+}
+
+.form-pago {
+    padding: 20px 20px 20px;
+}
+
+.metodo-pago {
+    display: flex;
+    gap: 15px;
+}
+
+.camiseta {
+    display: flex;
+    flex-direction: column;
+}
+
+.camiseta p {
+    margin: 0 0 5px;
+}
+
+.camiseta select {
+    width: 200px;
+}
+
+.boton-form {
+    background-color: var(--primary-color);
+    color: white;
+    font-size: large;
+    font-weight: 500;
+    padding: 6px;
+    width: fit-content;
+    border: none;
+    border-radius: 5px;
+}
+
+.boton-form:hover {
+    background-color: #e4e4e4;
+    color: var(--text-color);
+}
+

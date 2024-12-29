@@ -30,39 +30,39 @@
             nuestros amigos peludos. Ademas puedes comprar nuestra exclusiva camiseta por solo 10 euros que se añadiran
             al primer pago. Rellena el siguiente formulario para unirte a nosotros.</p>
         <form action="#" method="post">
-            <fieldset>
+            <fieldset class="form-datospersonales">
                 <legend>Datos Personales</legend>
-                <label for="nombre">Nombre *</label>
+                <label for="nombre">Nombre <span class="required">*</span></label>
                 <input type="text" id="nombre" name="nombre" required>
 
-                <label for="apellidos">Apellidos *</label>
+                <label for="apellidos">Apellidos <span class="required">*</span></label>
                 <input type="text" id="apellidos" name="apellidos" required>
 
-                <label for="email">Correo Electrónico *</label>
+                <label for="email">Correo Electrónico <span class="required">*</span></label>
                 <input type="email" id="email" name="email" required>
 
-                <label for="dni">DNI *</label>
+                <label for="dni">DNI <span class="required">*</span></label>
                 <input type="text" id="dni" name="dni" required>
 
-                <label for="fecha_nacimiento">Fecha de Nacimiento *</label>
+                <label for="fecha_nacimiento">Fecha de Nacimiento <span class="required">*</span></label>
                 <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
             </fieldset>
 
-            <fieldset>
+            <fieldset class="form-datospersonales">
                 <legend>Dirección</legend>
-                <label for="calle">Calle y Número *</label>
+                <label for="calle">Calle y Número <span class="required">*</span></label>
                 <input type="text" id="calle" name="calle" required>
 
-                <label for="ciudad">Ciudad *</label>
+                <label for="ciudad">Ciudad <span class="required">*</span></label>
                 <input type="text" id="ciudad" name="ciudad" required>
 
-                <label for="provincia">Provincia *</label>
+                <label for="provincia">Provincia <span class="required">*</span></label>
                 <input type="text" id="provincia" name="provincia" required>
 
-                <label for="cp">Código Postal *</label>
+                <label for="cp">Código Postal <span class="required">*</span></label>
                 <input type="text" id="cp" name="cp" required>
 
-                <label for="pais">País *</label>
+                <label for="pais">País <span class="required">*</span></label>
                 <select id="pais" name="pais" required>
                     <option value="">Seleccione...</option>
                     <option value="andorra">Andorra</option>
@@ -72,39 +72,45 @@
                 </select>
             </fieldset>
 
-            <fieldset>
+            <fieldset class="form-pago">
                 <legend>Datos de Pago y Camiseta</legend>
 
-                <p>Método de Pago *</p>
-                <input type="radio" id="transferencia" name="metodo_pago" value="transferencia" required>
-                <label for="transferencia">Transferencia</label><br>
+                <label for="transferencia"><strong>Método de Pago</strong></label>
+                <div class="metodo-pago">
+                    <input type="radio" id="transferencia" name="metodo_pago" value="transferencia" required checked>
+                    <label for="transferencia">Transferencia</label>
 
-                <input type="radio" id="tarjeta" name="metodo_pago" value="tarjeta">
-                <label for="tarjeta">Tarjeta de Crédito</label><br>
+                    <input type="radio" id="tarjeta" name="metodo_pago" value="tarjeta">
+                    <label for="tarjeta">Tarjeta de Crédito</label>
 
-                <input type="radio" id="paypal" name="metodo_pago" value="paypal">
-                <label for="paypal">PayPal</label>
+                    <input type="radio" id="paypal" name="metodo_pago" value="paypal">
+                    <label for="paypal">PayPal</label>
+                </div>
 
-                <label for="camiseta">Camiseta *</label>
-                <select id="camiseta" name="camiseta" required>
-                    <option value="no">No quiero camiseta</option>
-                    <option value="mujer_s">Mujer - Talla S</option>
-                    <option value="mujer_m">Mujer - Talla M</option>
-                    <option value="mujer_l">Mujer - Talla L</option>
-                    <option value="hombre_s">Hombre - Talla S</option>
-                    <option value="hombre_m">Hombre - Talla M</option>
-                    <option value="hombre_l">Hombre - Talla L</option>
-                </select>
+                <div class="camiseta">
+                    <label for="camiseta"><strong>Camiseta</strong></label>
+                    <p>Si quieres que te enviemos la camiseta Petinder por 10€, selecciona la talla a continuación</p>
+                    <p>Talla camiseta</p>
+                    <select id="camiseta" name="camiseta" required>
+                        <option value="no">No quiero camiseta</option>
+                        <option value="mujer_s">Mujer - Talla S</option>
+                        <option value="mujer_m">Mujer - Talla M</option>
+                        <option value="mujer_l">Mujer - Talla L</option>
+                        <option value="hombre_s">Hombre - Talla S</option>
+                        <option value="hombre_m">Hombre - Talla M</option>
+                        <option value="hombre_l">Hombre - Talla L</option>
+                    </select>
+                </div>
             </fieldset>
 
+            <span class="required">* Todos los campos marcados son obligatorios</span>
             <div>
                 <input type="checkbox" id="terminos" name="terminos" required>
-                <label for="terminos">He leído los términos y condiciones *</label>
+                <label for="terminos">He leído los términos y condiciones</label>
             </div>
 
-            <button type="submit">Enviar</button>
+            <button class="boton-form" type="submit">Enviar</button>
 
-            <p>* Todos los campos marcados son obligatorios</p>
         </form>
 
     </div>
