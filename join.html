@@ -15,16 +15,97 @@
         <a class="link-logo" href="index.html">
             <img class="logo" src="images/logo.svg" alt="logo de petinder">
         </a>
-            <ul class="menu-links">
-                <li><a href="about.html">Sobre Petinder</a></li>
-                <li><a href="tshirt.html">Camiseta</a></li>
-                <li><a href="">Hazte socio</a></li>
-            </ul>
+        <ul class="menu-links">
+            <li><a href="about.html">Sobre Petinder</a></li>
+            <li><a href="tshirt.html">Camiseta</a></li>
+            <li><a href="">Hazte socio</a></li>
+        </ul>
     </nav>
 </header>
 
 <main>
     <div class="container">
+        <h1 class="title">Hazte socio</h1>
+        <p>Colabora con Petinder haciendote socio por solo 15 euros mensuales. Con muy poco puedes ayudar mucho a
+            nuestros amigos peludos. Ademas puedes comprar nuestra exclusiva camiseta por solo 10 euros que se añadiran
+            al primer pago. Rellena el siguiente formulario para unirte a nosotros.</p>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Datos Personales</legend>
+                <label for="nombre">Nombre *</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="apellidos">Apellidos *</label>
+                <input type="text" id="apellidos" name="apellidos" required>
+
+                <label for="email">Correo Electrónico *</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="dni">DNI *</label>
+                <input type="text" id="dni" name="dni" required>
+
+                <label for="fecha_nacimiento">Fecha de Nacimiento *</label>
+                <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Dirección</legend>
+                <label for="calle">Calle y Número *</label>
+                <input type="text" id="calle" name="calle" required>
+
+                <label for="ciudad">Ciudad *</label>
+                <input type="text" id="ciudad" name="ciudad" required>
+
+                <label for="provincia">Provincia *</label>
+                <input type="text" id="provincia" name="provincia" required>
+
+                <label for="cp">Código Postal *</label>
+                <input type="text" id="cp" name="cp" required>
+
+                <label for="pais">País *</label>
+                <select id="pais" name="pais" required>
+                    <option value="">Seleccione...</option>
+                    <option value="andorra">Andorra</option>
+                    <option value="espana">España</option>
+                    <option value="francia">Francia</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Datos de Pago y Camiseta</legend>
+
+                <p>Método de Pago *</p>
+                <input type="radio" id="transferencia" name="metodo_pago" value="transferencia" required>
+                <label for="transferencia">Transferencia</label><br>
+
+                <input type="radio" id="tarjeta" name="metodo_pago" value="tarjeta">
+                <label for="tarjeta">Tarjeta de Crédito</label><br>
+
+                <input type="radio" id="paypal" name="metodo_pago" value="paypal">
+                <label for="paypal">PayPal</label>
+
+                <label for="camiseta">Camiseta *</label>
+                <select id="camiseta" name="camiseta" required>
+                    <option value="no">No quiero camiseta</option>
+                    <option value="mujer_s">Mujer - Talla S</option>
+                    <option value="mujer_m">Mujer - Talla M</option>
+                    <option value="mujer_l">Mujer - Talla L</option>
+                    <option value="hombre_s">Hombre - Talla S</option>
+                    <option value="hombre_m">Hombre - Talla M</option>
+                    <option value="hombre_l">Hombre - Talla L</option>
+                </select>
+            </fieldset>
+
+            <div>
+                <input type="checkbox" id="terminos" name="terminos" required>
+                <label for="terminos">He leído los términos y condiciones *</label>
+            </div>
+
+            <button type="submit">Enviar</button>
+
+            <p>* Todos los campos marcados son obligatorios</p>
+        </form>
 
     </div>
 </main>
