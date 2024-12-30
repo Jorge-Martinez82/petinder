@@ -203,7 +203,7 @@ footer .legal-links li {
 }
 
 .page-home .title span {
-    color: white;
+    color: var(--primary-color);
 }
 
 .page-home .feature {
@@ -305,7 +305,7 @@ table caption {
 
 /* Pagina join */
 
-form {
+.join {
     width: 50%;
     display: flex;
     flex-direction: column;
